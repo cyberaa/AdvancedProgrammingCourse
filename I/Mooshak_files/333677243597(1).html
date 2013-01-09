@@ -1,0 +1,123 @@
+
+<!-- saved from url=(0065)http://mooshak.dei.uc.pt/~lpa/cgi-bin/execute/333677243597?view+H -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="base.css" type="text/css">
+<style type="text/css"></style></head>
+<body>
+<center>
+<table cellpadding="20" width="100%">
+<tbody><tr>
+<td id="Base">
+
+<title>Problem H - Puzzle Solver</title>
+
+
+<h1 align="CENTER">Problem H - Puzzle Solver</h1>
+
+<hr>
+
+<img src="333677243597" height="200pt">
+
+<h2>Description</h2>
+
+<p>In the daily newspaper, you find the following puzzle:
+</p><blockquote><pre>    D O G
+    A N D
+    D A D
+  S I N G
++       A
+---------
+  S O N G
+</pre></blockquote>
+The challenge is to replace each letter in the puzzle by a different
+decimal digit so that the result of the addition is true. The rules are
+<ul>
+  <li>Each letter must correspond to a single digit
+  </li><li>Each digit must correspond to a single letter
+  </li><li>Numbers must not start with a zero
+</li></ul>
+Since you do not want to waste time solving these puzzles by hand, you decide
+to write a program to solve them automatically.
+<p></p>
+
+<p>
+</p><hr>
+
+<h2>Input</h2> 
+
+Each test case may consist of several puzzles. In the first line, the number of
+lines <i>n</i> and the number of columns <i>m</i> of the puzzle are given.
+Then, <i>n</i> lines follow, each consisting of <i>m</i> characters followed by
+an end-of-line. The first <i>n-1</i> lines represent the summands, and the last line
+represents the sum. Summands are right-aligned and may be pre-padded with spaces
+as needed.
+<hr>
+
+<h2>Output</h2>
+
+For each puzzle, your program should output all possible solutions or report that
+the puzzle cannot be solved. Each solution of a puzzle is a single
+line containing a sequence of letter-digit pairs separated from each
+other by a space. Within each pair, the letter is separated from the
+digit by an equals (=) sign. The letters must be presented in alphabetical
+order. If there is more than one solution for a puzzle, all solutions should be printed
+in separate lines, in lexicographic order of the
+digits. If the puzzle cannot be solved, the output should be
+<blockquote><pre>No solution!
+</pre></blockquote>
+Solutions for different puzzles should be separated by a blank line. There
+should be no blank line at the end of the output.
+<p>
+</p><hr>
+
+<h2> Example</h2>
+
+<p><b>Example input:</b></p>
+
+<blockquote><pre>6 4
+ SON
+ AND
+ DAD
+SING
+   A
+SONG
+6 4
+ DOG
+ AND
+ DAD
+SING
+   A
+SONG
+</pre></blockquote>
+
+<p>
+</p><hr>
+
+<p><b>Example output:</b></p>
+
+
+<blockquote><pre>No solution!
+
+A=2 D=1 G=6 I=3 N=8 O=9 S=4
+A=2 D=1 G=6 I=3 N=8 O=9 S=5
+A=2 D=1 G=6 I=3 N=8 O=9 S=7
+A=3 D=1 G=5 I=0 N=9 O=7 S=2
+A=3 D=1 G=5 I=0 N=9 O=7 S=4
+A=3 D=1 G=5 I=0 N=9 O=7 S=6
+A=3 D=1 G=5 I=0 N=9 O=7 S=8
+A=3 D=1 G=5 I=2 N=7 O=9 S=4
+A=3 D=1 G=5 I=2 N=7 O=9 S=6
+A=3 D=1 G=5 I=2 N=7 O=9 S=8
+</pre></blockquote>
+
+<hr>
+
+
+
+</td>
+</tr>
+</tbody></table>
+</center>
+
+
+</body></html>

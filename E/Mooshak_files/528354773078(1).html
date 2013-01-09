@@ -1,0 +1,98 @@
+
+<!-- saved from url=(0065)http://mooshak.dei.uc.pt/~lpa/cgi-bin/execute/528354773078?view+E -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="base.css" type="text/css">
+<style type="text/css"></style></head>
+<body>
+<center>
+<table cellpadding="20" width="100%">
+<tbody><tr>
+<td id="Base">
+
+<title>Problem E - Word stretcher</title>
+
+
+<h1 align="CENTER"> Problem E - Word stretcher</h1>
+
+<hr>
+
+<h2> Description</h2>
+
+A new word game has been released which is rapidly becoming very popular.
+The game consists of a deck of cards and a bag of letters. Each card
+has a word written on it. The game starts with the first card of the deck
+being drawn and placed face up on the table to show the word on it.
+<p>
+Then, the first player draws a second card to get another word. To score, this
+player must write one word above the other using the letters from the bag, and
+then "stretch" the words by inserting dashes between the letters in order to
+make some of the letters match. Note that when a word is longer than the other,
+a certain number of dashes must always be used. The score is computed as the
+number of positions in which the letters in each word match minus the number of
+positions in which the letters do not match minus the number of dashes used to
+stretch the words. The maximum score may be negative.
+</p><p>
+The second player proceeds by drawing another card, writing both the new word
+and the word drawn by the previous player, and stretching them to maximise the
+score, and so forth, until the the last card on the deck is drawn.
+The player with the maximum accumulated score wins the game.
+
+ </p><hr> <h2>Input</h2> 
+
+Each test case gives the information about two words, and
+consists of two lines.  The first line gives the length of the first
+word (<i>n</i>) and the <i>n</i>-character-long word itself. The
+second line provides the same information for the second word.
+The words contain neither spaces nor dashes ("-"), and may have different lengths.<p>
+</p><hr>
+
+<h2>Output</h2>
+
+The output for each test case consists of three lines: the two stretched words
+in the first two lines (including the dashes) and the corresponding score value
+in the third line.<p>
+
+Note that there may be different ways of stretching the same pair of words
+to obtain the same score. Mooshak will compute the score based on the
+stretched words returned by your program. The output will only be accepted
+if the stretched words are valid given the input and the corresponding
+score is optimal and equal to the score in the third line of the output.
+</p><p>
+</p><hr>
+
+<h2> Example</h2>
+
+<p><b>Example input:</b></p>
+
+<blockquote><pre>6 amanha
+10 maquininha
+</pre></blockquote>
+
+<p>
+</p><hr>
+
+<p><b>Example output:</b></p>
+
+<blockquote><pre>ama-----nha
+-maquininha
+-1
+</pre></blockquote>
+
+<hr>
+
+<p><b>Another possible output:</b></p>
+
+<blockquote><pre>ama---n--ha
+-maquininha
+-1
+</pre></blockquote>
+
+
+
+</td>
+</tr>
+</tbody></table>
+</center>
+
+
+</body><link rel="stylesheet" type="text/css" href="data:text/css,"></html>
